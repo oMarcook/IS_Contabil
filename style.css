@@ -8,7 +8,7 @@
 html,
 body {
     height: 100%;
-    font-family: "Instrument Serif", serif;
+  font-family: 'Poppins', sans-serif;
     background-color: #efeaec;
 }
 
@@ -98,11 +98,14 @@ header {
     background: #B08D57;
     backdrop-filter: blur(8px);
 
+    
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+
     z-index: 1000;
 }
 
 .header-logo img {
-    width: 300px;   /* antes era 150px */
+    width: 270px;   
     height: auto;
 }
 
@@ -129,7 +132,7 @@ header {
     border: 2px solid #000;
     border-radius: 999px;
 
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(10px);
 }
 .menu a {
@@ -145,10 +148,103 @@ header {
 }
 
 
-.sec2 {
-    position: relative;
-    z-index: 1;
-    
+.services{
+    width:80%;
+    padding:120px;
+    background:#ffffff;
+    margin-left: 400px;
+    border: 2px solid #B08D57;
+    border-radius: 12px;
+    animation: brilho 2s infinite alternate;
+}
+
+@keyframes brilho {
+    from {
+        box-shadow:
+            0 0 5px #B08D57,
+            0 0 10px #B08D57;
+    }
+
+    to {
+        box-shadow:
+            0 0 15px #B08D57,
+            0 0 30px #B08D57,
+            0 0 45px #B08D57;
+    }
+}
+
+
+.services-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.services-title h2{
+    font-size:3.5rem;
+    color:#111;
+    margin-bottom:20px;
+}
+
+.services-title p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.2rem;
+    color:#0e0d0d;
+    line-height:1.8;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.service-card{
+    background:#ffffff;
+    padding:40px 35px;
+    border-radius:18px;
+    text-align:center;
+
+   box-shadow:
+    0 0 8px rgba(212, 175, 55, 0.5),
+    0 0 16px rgba(212, 175, 55, 0.35);
+
+    transition:.35s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px #B08D57;
+}
+
+.icon{
+    width:80px;
+    height:80px;
+
+    margin:0 auto 25px;
+
+    background:#B08D57;
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2rem;
+}
+
+.service-card h3{
+    font-size:1.8rem;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.service-card p{
+    color:#000000;
+    line-height:1.7;
+    font-size:1.05rem;
 }
 
 .sobre {
@@ -168,22 +264,8 @@ font-size: 3rem;
     transform: translateY(0);
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.scroll-indicator span {
-    display: block;
-    width: 25px;
-    height: 25px;
-    border-bottom: 3px solid #c9d1d9;
-    border-right: 3px solid #c9d1d9;
-    transform: rotate(45deg);
-    animation: scrollAnim 1.5s infinite;
-}
+
 
 
 
