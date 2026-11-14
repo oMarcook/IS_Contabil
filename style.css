@@ -333,6 +333,27 @@ font-size: 3rem;
     color:#cbd5e1;
 }
 
+.social-link {
+    color:#f8fafc;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s ease;
+}
+
+.social-link:hover {
+    color:#B08D57;
+}
+
+.instagram-icon,
+.tiktok-icon {
+    color:#000;
+}
+
+.instagram-icon svg,
+.tiktok-icon svg {
+    width:24px;
+    height:24px;
+}
 
 .contato-form{
     background:#fff;
@@ -580,8 +601,5 @@ font-size: 3rem;
         text-align:center;
     }
 }
-
-
-
 
 
